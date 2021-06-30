@@ -1,19 +1,22 @@
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>출력결과</title>
-  </head>
-  <body>
-    <script>
-      function solution(a, b, c) {
-        let answer;
-        if (a < b) answer = a;
-        else answer = b;
-        if (c < answer) answer = c;
-        return answer;
-      }
-
-      console.log(solution(2, 5, 1));
-    </script>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c) {
+                let answer;
+                if (a < b) answer = a;
+                else answer = b;
+                if (c < b) answer = c;
+                return answer;
+            }
+            console.log(solution(6, 7, 3));
+        </script>
+    </body>
 </html>
+
+<!-- 세수중 최솟값을 구한다 -->
+<!-- a,b,c를 매개변수로 넣어준다 answer은 가변성이있기때문에 let으로 선언해준다 a,b를 먼저 비교해주면 a 이후 아닌값은 else b -->
+<!-- c가 answer 보다 작으면 answer = c를 출력해준다 -->

@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(a, b, c) {
+                let answer = "yes",
+                    max;
+                let sum = a + b + c;
+                if (a > b) max = a;
+                else max = b;
+                if (c > max) max = c;
+                if (sum - max <= max) answer = "no";
+                return answer;
+            }
+            console.log(solution(13, 33, 17));
+        </script>
+    </body>
+</html>
+
+<!-- 삼각형 판별하기 -->
+<!-- 최솟값 구하는거와 마찬가지로 a,b,c 세자리 숫자  -->
+<!-- 일단 a+b+c 를 sum 으로 지정해두고 가장긴 막대는 작은막대가 합친거보다 작아야한다 -->
+<!-- 다시 듣기 -->
