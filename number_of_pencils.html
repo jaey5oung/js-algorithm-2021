@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>출력결과</title>
+    </head>
+    <body>
+        <script>
+            function solution(n) {
+                let answer = Math.ceil(n / 12);
+
+                return answer;
+            }
+            console.log(solution(123));
+        </script>
+    </body>
+</html>
+
+<!-- 계산이 필요한 함수객체는 Math.xxx MDN에 검색해 자세히 알수있다 -->
+<!-- Math.ceil은 예를들어 14.88888이면 15로 올림한다 만약 123/12 는 10.25인데 임에도 불구하고 이때도 11로 올림할수있는 걸 볼수있다-->

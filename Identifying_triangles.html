@@ -12,7 +12,9 @@
                 if (a > b) max = a;
                 else max = b;
                 if (c > max) max = c;
+                //이 위까지가 최대값(max) 구하기
                 if (sum - max <= max) answer = "no";
+                // 만약 abc더한합 - 최대값이 최대값보다 작거나 같은경우 '노' (작은 두 수의 합)
                 return answer;
             }
             console.log(solution(13, 33, 17));
